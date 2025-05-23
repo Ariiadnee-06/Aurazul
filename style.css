@@ -1,0 +1,368 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General;
+    font-size: 20px;
+    color: #212121;
+}
+
+@font-face {
+    font-family: General;
+    src: url(Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url(Bartleen\ Script.ttf);
+}
+/*LLevar*/
+html {
+    scroll-behavior: smooth;
+  }
+   
+/*Encabezado*/
+
+.menu{
+    
+    background-color: #99b4db;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 5px 10%;
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.logo{
+    cursor: pointer;
+    width: auto;
+}
+
+.menu .logo a img 
+{
+    transition: transform 0.3s ease;
+    height: 95px;
+    width: auto;
+}
+
+.logo >img:hover{
+    transform: scale(0.9,0.9);
+}
+
+.menu img{
+    margin: 10px;
+    height: 65px;
+    width: auto;
+}
+.menu img:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1,1.1);
+}
+
+.menu_2
+{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10%;
+    display: flex;
+}
+
+.menu_2 ul{
+    text-align: center;
+}
+
+.menu_2 .listem_item{
+    display: inline-block;
+    list-style: none;
+}
+
+.listem_item .link{
+    font-size: 22px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    position: relative;
+}
+
+.listem_item .link:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #99b4db;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 1.5s;
+    will-change: widht;
+}
+
+.listem_item .link:hover:after{
+    width: 100%;
+    right: 0;
+}
+/*Contenido*/
+
+.conteiner{
+    padding: 0;
+}
+
+.con1 {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+    position: relative;
+  }
+  
+  .con1 img {
+    position: absolute; /* Añade posición absoluta para la imagen de fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+    opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo si lo deseas */
+  }
+  
+  .con1 p b {
+    font-size: 25px;
+  }
+  
+  .con1 h2 {
+    font-family: Titulos;
+    font-size: 40px;
+  }
+  
+  .con1 .boton {
+    transition: transform 0.3s ease;
+    background-color: #99b4db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  
+  .con1 .boton:hover {
+    transform: scale(1.05, 1.05); /* Aumenta el tamaño al 110% */
+  }
+
+  #con2 {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    color: #333; /* Color de texto para esta sección */
+  }
+
+  #con2 h3{
+        font-size: 45px;
+        font-family: Titulos;
+  }
+
+  .con3{
+    margin-bottom: 15px;
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+  }
+
+  .con3 img{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 180px; /* Ajusta el ancho según tus necesidades */
+    height: 180px; /* Ajusta la altura según tus necesidades */
+    border-radius: 50%;
+    margin-left: 30px;
+    object-fit: cover; /* Esto asegura que la imagen se ajuste correctamente en el círculo */
+}
+
+.con3 img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.con4
+{
+    padding: 25px;
+    text-align: center;
+    background-color: #bac8db;
+}
+
+.con4 h2{
+    font-size: 25px;
+    font-family: Titulos;
+}
+
+.con4 p{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.con4 .llevar{
+    transition: transform 0.3s ease;
+    border: #212121 0.5px;
+    width: 110px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.con4 .llevar a{
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.con4 .llevar:hover{
+    background-color: #dae3f0;
+    transform: scale(1.05, 1.05);
+}
+
+.con5{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    display: flex;
+    background-color: #fff;
+  }
+
+  .con5 img{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 180px; /* Ajusta el ancho según tus necesidades */
+    height: 180px; /* Ajusta la altura según tus necesidades */
+    border-radius: 50%;
+    margin-left: 30px;
+    object-fit: cover; /* Esto asegura que la imagen se ajuste correctamente en el círculo */
+}
+
+.con5 img:hover{
+    transform: scale(1.05, 1.05);
+}
+
+
+
+ /*Pie de pagina*/
+ .pie-pagina
+ {
+    width: 100%;
+    background-color: #bac8db;
+ }
+ 
+ .pie-pagina .parte_1
+ {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+     grid-gap: 50px;
+     padding: 45px 0px;
+ }
+ 
+ .pie-pagina .parte_1 .box_1 figure
+ {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .pie-pagina .parte_1 .box_1 figure img
+ {
+    transition: transform 0.3s ease;
+     height: 120px;
+ }
+ 
+ .pie-pagina .parte_1 .box_1 figure img:hover
+ {
+     transform: scale(0.9,0.9);
+ }
+ 
+ .pie-pagina .parte_1 .box_2 ul li{
+    margin: 5px;
+    list-style: none;
+    font-size: 15px;
+ }
+
+ .pie-pagina .parte_1 .box_2 a{
+    text-decoration: none;
+ }
+
+ .pie-pagina .parte_1 h2
+ {
+     font-family: Titulos;
+     margin-bottom: 25px;   
+ }
+ 
+ .pie-pagina .parte_1 .box_3 p
+ {
+    text-align: justify;
+     font-size: 15px;
+     margin-bottom: 10px;
+ }
+
+ .pie-pagina .parte_1 .box_4 .metodos img
+ {
+    transition: all 300ms ease;
+     height: 30px;
+     width: auto;
+     line-height: 40px;
+     margin-right: 10px;
+ }
+ 
+ .pie-pagina .parte_1 .box_4 .metodos :hover
+ {
+     transform: scale(1.1,1.1);
+ }
+
+ .pie-pagina .parte_1 .box_5 .red-social a
+ {
+     display: inline-block;
+     text-decoration: none;
+     transition: all 300ms ease;
+ }
+ .pie-pagina .parte_1 .box_5 .red-social a img
+ {
+    transition: transform 0.3s ease;
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     margin-right: 10px;
+ }
+ 
+ .pie-pagina .parte_1 .box_5 .red-social a :hover
+ {
+     transform: scale(1.1,1.1);
+ }
+ .pie-pagina .parte_2
+ {
+     background-color: #99b4db;
+     cursor: pointer;
+     text-align: center;
+     padding: 15px 10px;
+ }
+ 
+ .pie-pagina .parte_2 small b:hover
+ {
+     color: #fff;
+ }

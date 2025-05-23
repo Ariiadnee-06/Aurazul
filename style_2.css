@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General;
+    font-size: 18px;
+    color: #212121;
+}
+
+@font-face {
+    font-family: General;
+    src: url(Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url(Bartleen\ Script.ttf);
+}
+
+/*Encabezado*/
+
+
+.menu{
+    
+    background-color: #99b4db;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 5px 10%;
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.logo{
+    cursor: pointer;
+    width: auto;
+}
+
+.menu .logo a img 
+{
+    transition: transform 0.3s ease;
+    height: 95px;
+    width: auto;
+}
+
+.logo >img:hover{
+    transform: scale(0.9,0.9);
+}
+
+.menu img{
+    margin: 10px;
+    height: 65px;
+    width: auto;
+}
+.menu img:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1,1.1);
+}
+
+.menu_2
+{
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10%;
+    display: flex;
+}
+
+.menu_2 ul{
+    text-align: center;
+}
+
+.menu_2 .listem_item{
+    display: inline-block;
+    list-style: none;
+}
+
+.listem_item .link{
+    font-size: 22px;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    position: relative;
+}
+
+.listem_item .link:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #99b4db;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 1.5s;
+    will-change: widht;
+}
+
+.listem_item .link:hover:after{
+    width: 100%;
+    right: 0;
+}
+/*Contenido*/
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.product-container {
+    margin: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(20% - 20px);
+    border: 2.7px solid #bac8db;
+    border-radius: 27px;
+    padding: 9px;
+    margin: 9px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    border-radius: 27px;
+    max-width: 100%;
+    height: 225px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin: 9px 0;
+}
+
+.product-price {
+    color: #99b4db;
+}
+
+.con2{
+    background-color: #fff;
+    padding: 45px;
+}
+
+.add-to-cart-button {
+    margin: 4.5px;
+    border-radius: 27px;
+    background-color: #99b4db;
+    color: #fff;
+    padding: 4.5px 18px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-to-cart-button:hover {
+    background-color: #bac8db;
+}
+
+ /*Pie de pagina*/
+
+.pie-pagina
+ {
+    width: 100%;
+    background-color: #bac8db;
+ }
+ 
+ .pie-pagina .parte_2
+ {
+     background-color: #99b4db;
+     cursor: pointer;
+     text-align: center;
+     padding: 15px 10px;
+ }
+ 
+ .pie-pagina .parte_2 small b:hover
+ {
+     color: #fff;
+ }
