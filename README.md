@@ -2,7 +2,7 @@
 
 ## 📌 Descripción del proyecto
 
-**Aurazul** es un sitio web de comercio electrónico desarrollado como **proyecto final de la técnica Auxiliar en Desarrollo de Software**.
+**Aurazul** es un sitio web de comercio electrónico desarrollado como **proyecto de la técnica Auxiliar en Desarrollo de Software**.
 
 El proyecto consiste en una tienda virtual de accesorios donde los usuarios pueden explorar diferentes productos como **anillos, collares y pulseras**, visualizando imágenes, nombres y precios de cada artículo.
 
