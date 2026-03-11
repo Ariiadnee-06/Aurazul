@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: General;
-    src: url(Comfortaa-Light.ttf);
+    src: url("../fonts/Comfortaa-Light.ttf");
 }
 
 @font-face {
     font-family: Titulos;
-    src: url(Bartleen\ Script.ttf);
+    src: url("../fonts/Bartleen Script.ttf");
 }
 /*LLevar*/
 html {
